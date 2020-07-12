@@ -14,6 +14,7 @@ struct M {
         for(int i=0;i<n;i++) {
             return mas[i]*x^stepen+mas[i+1]*x^(stepen-i);
         }
+    }
         ~M(){
             cout<<"end"<<endl;
             delete[] mas;
