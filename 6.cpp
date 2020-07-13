@@ -6,11 +6,11 @@ struct Mas {
 	int size;
 	void change();
 	Mas(int n,int c) {
-		vector<int> v(n, c);
+		vector<int> v.resize(n, c);
 	}
 
 	Mas(int arr[], int n) {
-		vector<int> v(n);
+		vector<int> v.resize(n);
 		for (int i = 0; i < n; i++) {
 			v[i] = arr[i];
 		}
